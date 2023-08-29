@@ -14,7 +14,7 @@ public class PruebaTask {
     @Value("${param.query.search}")
     private String parametro;
 
-    @Scheduled(cron = "* * * * * *")
+    @Scheduled(cron = "0 * * * * *")
     public void runRetry() {
         search.searchData(parametro);
     }
