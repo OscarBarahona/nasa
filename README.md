@@ -1,3 +1,4 @@
+
 # README
 Nasa Test
 
@@ -5,8 +6,10 @@ A continuacion se detalla la manera correcta de poder compilar y realizar prueba
 
 #### Paso 1:
 Cargar la base de datos (postgresql) con su gestor de base de datos preferido
+
 #### Paso 2:
 Modificar el archivo application.properties del proyecto e ingresar la url de conexion con su base de datos (Actualmente se encuentra con una base de datos llamada nasa, favor cambiar la password por la que tenga su servidor)
+
 #### Paso 3:
 Abrir el Proyecto con su IDE preferido y Ejecutarlo (por defecto se encuentra configurado en el puerto 8080)
 
@@ -21,11 +24,8 @@ curl --location --request GET 'http://localhost:8080/v1.0/'
 
 ## Script Base de Datos
 
-
-
 //PASO #1
 //Creacion de la Base de Datos
-
 CREATE DATABASE "nasa";
 
 //PASO #2
