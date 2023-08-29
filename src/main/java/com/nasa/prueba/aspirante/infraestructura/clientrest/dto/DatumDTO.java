@@ -1,5 +1,6 @@
 package com.nasa.prueba.aspirante.infraestructura.clientrest.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,9 +14,12 @@ public class DatumDTO implements Serializable {
     private String center;
     private String title;
     private List<String> keywords;
-    private String nasa_id;
-    private Date date_created;
-    private String media_type;
+    @JsonProperty("nasa_id")
+    private String nasaId;
+    @JsonProperty("date_created")
+    private Date dateCreated;
+    @JsonProperty("media_type")
+    private String mediaType;
     private String description;
     private List<String> album;
     private String photographer;

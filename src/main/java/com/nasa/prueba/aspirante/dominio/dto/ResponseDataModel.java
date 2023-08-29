@@ -10,6 +10,6 @@ import java.util.List;
 @Setter
 public class ResponseDataModel<T> implements Serializable {
     private Boolean succeeded=true;
-    private List<T> data;
+    private transient List<T>  data;
     private List<ErrorDetailModel> error;
 }

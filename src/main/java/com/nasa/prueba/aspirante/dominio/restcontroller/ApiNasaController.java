@@ -17,7 +17,7 @@ public class ApiNasaController {
     IApolo apolo;
 
     @GetMapping(value = "/", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseDataModel<ResponseApoloDTO> GetDataApolo() {
+    public ResponseDataModel<ResponseApoloDTO> getDataApolo() {
         return apolo.getInfoDB();
     }
 

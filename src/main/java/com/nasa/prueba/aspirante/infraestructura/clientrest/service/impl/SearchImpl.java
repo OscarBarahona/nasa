@@ -51,7 +51,7 @@ public class SearchImpl implements ISearch {
             for (DatumDTO datumDTO : itemDTO.getData()) {
                 entity.setCenter(datumDTO.getCenter());
                 entity.setTitle(datumDTO.getTitle());
-                entity.setNasaId(datumDTO.getNasa_id());
+                entity.setNasaId(datumDTO.getNasaId());
 
             }
             log.info("Iteracion {}", new ObjectMapper().writeValueAsString(entity));
